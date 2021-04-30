@@ -1,0 +1,496 @@
+# EJERCICIO.1
+nombre = "Jorge Andrés Pinilla González"
+print("Este es mi nombre:", nombre,"...")
+print("""agregale un calificativo,
+Ejemplo: Jorge....The best.""")
+calificativo = str(input("Calificativo= "))
+### Mi_nombre_con_el_calificativo...
+print(nombre,calificativo)
+
+
+# EJERCICIO.2
+Numero = int(input("Introduzca un numero al que a continuacion se le sacara el cuadrado: "))
+print("EL numero", Numero, "al cuadrado da igual a:",Numero*Numero)
+
+
+# EJERCICIO.3
+num1 = int(input("Ingrese el primer numero: "))
+num2 = int(input("Ingrese el segundo numero: "))
+print("La suma de los dos numeros digitados es",num2+num1)
+
+# EJERCICIO.4
+num1 = int(input("Ingrese el primer numero: "))
+num2 = int(input("Ingrese el segundo numero: "))
+print("Suma de los dos numeros dados= ", num2+num1)
+print("Resta de los dos numeros dados =", num2-num1)
+print("Multiplicación de los dos numeros dados =", num2*num1)
+print("Division de los dos numeros dados =", num2/num1)
+print("Residuo de los dos numeros dados, si el primero es dividido por el segundo =", num1%num2)
+print("Residuo de los dos numeros dados, si el segundo es dividido por el primero =", num2%num1)
+
+# EJERCICIO.5
+number = float(input("introduzca un numero: "))
+decimal = number- int(number)
+print("La parte decimal de el numero es: ",decimal)
+print("La parte entera de el numero es: ", int(number))
+
+# EJERCICIO.6
+venta = int(input("Intruduzca el valor de la venta: "))
+iva_venta = venta / 100*19
+print("El valor original de la venta(sin iva) es: ",venta - iva_venta)
+print("Este es el precio del iva aplicado en la venta: ", iva_venta)
+print("valor de la venta con iva: ",venta)
+
+# EJERCICIO. 7
+radio = int(input("Ingrese el radio del circulo para calcular el perimetro y area de este: "))
+print("El perimetro es = ",2*3.141592*radio)
+print("El area es = ",radio**2*3.141592)
+
+# EJERCICIO.8
+apotema = float(input("Ingrese el apotema del Hexagono: "))
+perimetro = float(input(" Ingrese el perimetro del Hexagono: "))
+area = (apotema*perimetro)/2
+print("Este es el area= ",area)
+
+# EJERCICIO.9
+num1 = float(input("Ingrese el primero numero: "))
+num2 = float(input("Ingrese el segundo numero: "))
+num3 = float(input("Ingrese el tercer numero: "))
+promedio = (num3+num1+num2)/3
+print("Este es el promedio: ",promedio)
+
+# EJERCICIO.10
+numA = (int(input("Introduzca el valor de A =")))
+numB = (int(input("Introduzca el valor de B =")))
+print("Variable A = ",numA)
+print("Variable B = ",numB)
+Auxiliar = numA
+numA = numB
+numB = Auxiliar
+
+print("Se han intercambiado variables Ahora (A) es = ", numA)
+print("Se han intercambiado variables Ahora (B) es = ", numB)
+
+# EJERCICIO.11
+H = int(input("Ingrese la altura a la que se deja caer el objeto = "))
+Gravedad = 10
+tiempo = H/(Gravedad/2)
+print("El tiempo de caida es = ",tiempo,"**2")
+
+# EJERCICIO.12
+## Movimiento rectilineo uniformemente acelerado
+a = int(input("Ingrese la aceleracion en m/s² = "))
+t = int(input("Ingrese el tiempo en segundos = "))
+m = str(a) + str("m/s²")
+n = str(t) + str("s")
+print(" la Aceleracion es: ",m)
+print(" El tiempo  es: ",n)
+distancia = (1/2)*(int(a)*(t**2))
+print("Y La distancia es = ",distancia,"metros")
+
+# EJERCICIO.13
+## Movimiento rectilineo uniformemente acelerado hallando velocidad final
+a = int(input("Ingrese la aceleracion en m/s² = "))
+t = int(input("Ingrese el tiempo en segundos en el que queire plantear el problema= "))
+m = str(a) + str("m/s²")
+n = str(t) + str("s")
+print(" la Aceleracion es: ",m)
+print(" El tiempo  es: ",n)
+distancia = (1/2)*(int(a)*(t**2))
+print("Y La distancia es = ",distancia,"metros")
+velocidadfinal= 2*a*distancia
+print("La velocidad final es = ",velocidadfinal)
+
+# EJERCICIO. 14
+kg = int(input("Ingrese el peso en kilogramos: "))
+vl = int(input("Ingrese la velocidad luz en m/s²: "))
+energia = kg*vl**2/2
+print("Esta es la cantidad de julios",energia)
+
+# EJERCICIO.15
+import math
+
+x1  = int(input("Escribir la abcisa 1: "))
+x2  = int(input("Escribir la abcisa 2 : "))
+y1  = int(input("Escribir la ordenada 1: "))
+y2  = int(input("Escribir la ordenada 2: " ))
+if x1>0 and x2>0 and y1>0 and y2>0:
+    Distancia = math.sqrt((x2-x1)**2+(y2-y1)**2)
+    print("La distancia es: ",Distancia)
+else:
+    print("""UPS!!
+Lo siento has ingresados valores menores o iguales a 0.""")
+
+# EJERCICIO.16
+Segundos = int(input("Cuantos segundos desea convertir a horas?: "))
+horas = (Segundos/60)/60
+print(Segundos,"segundos son",horas, "horas.")
+
+# EJERCICIO. 17
+
+Segundos = int(input("Cuantos segundos desea convertir a minutos?: "))
+minutos = Segundos/60
+print(Segundos,"segundos son", minutos)
+
+# EJERCICIO. 18
+cantidad = int(input("Ingrese una cantidad de segundos: "))
+horas = cantidad/3600
+temp = cantidad % 3600
+minutos = temp / 60
+segundos = temp % 60
+print("La hora es ",int(horas),":",int(minutos),":",int(segundos))
+
+# EJERCICIO .19
+dinero = int(input("Ingrese la cantidad de dinero(En pesos): "))
+if dinero >= 100000:
+    queda = dinero // 100000
+    print("Existe",queda,"billetes de 100k pesos")
+    dinero = dinero % 100000
+if dinero >= 50000:
+    queda = dinero // 50000
+    print("Existe", queda, "billetes de 50k pesos")
+    dinero = dinero % 50000
+if dinero >= 20000:
+    queda = dinero // 20000
+    print("Existe", queda, "billetes de 20k pesos")
+    dinero = dinero % 20000
+if dinero >= 10000:
+    queda = dinero // 10000
+    print("Existe", queda, "billetes de 10k pesos")
+    dinero = dinero % 10000
+if dinero >= 5000:
+    queda = dinero // 5000
+    print("Existe", queda, "billetes de 5k pesos")
+    dinero = dinero % 5000
+if dinero >= 50000:
+    queda = dinero // 50000
+    print("Existe", queda, "billetes de 50k pesos")
+    dinero = dinero % 50000
+if dinero >= 2000:
+    queda = dinero // 2000
+    print("Existe", queda, "billetes de 2k pesos")
+    dinero = dinero % 2000
+if dinero >= 1000:
+    queda = dinero // 1000
+    print("Existe", queda, "billetes de 1k pesos")
+    dinero = dinero % 1000
+print("""Lo siento no doy monedas :c 
+ te quedo debiendo""",str(dinero)+"pesos." )
+
+# EJERCICIO. 20
+A = int(input("Introduzca un numero: "))
+c4 = A % 10
+c3 = int((A%100)/10)
+c2 = int((A%1000)/100)
+c1 = int((A-(A%1000))/1000)
+print("El numero al reves es: ",str(c4)+str(c3)+str(c2)+str(c1))
+
+# EJERCICIO. 21
+num = int(input("Ingrese un numero: "))
+if num % 2 == 0:
+    print("El numero",num," es par.")
+else:
+    print("el numero",num,"es impar.")
+
+# EJERCICIO. 22
+num = int(input("Ingrese un numero: "))
+if num > 0:
+    print("El numero",num,"es positivo.")
+elif num == 0:
+    print("El numero",num," no es positivo ni negativo.")
+else:
+    print("el numero",num,"es negativo.")
+
+# EJERCICIO. 23
+# EJERCICIO. 23
+num = int(input("Ingrese un numero: "))
+if num > 0 and num % 2== 0:
+    print("El numero",num,"es par-positivo.")
+elif num > 0 and num % 2== 1:
+    print("El numero",num,"es impar-positivo.")
+elif num < 0 and num % 2== 0:
+    print("El numero",num,"es par-negativo")
+elif num < 0 and num % 2== 1:
+    print("El numero",num,"es impar-negativo")
+else:
+    print("el numero 0 es par neutro")
+
+# EJERCICIO. 24
+venta = int(input("""Ingrese el precio de una venta,
+si esta es mayor a 150000 recibira un descuento del 5%
+EL Precio de la venta es: """))
+iva = venta * 19 / 100
+fivepercent = venta * 5 / 100
+print("EL iva es igual a: ", iva)
+if venta > 150.000:
+    venta -= fivepercent
+    print(venta)
+
+# EJERCICIO. 25
+num = int(input("Por favor ingrese un numero: "))
+if num >= 10:
+    num= num * 3
+    print("Su numero se multiplico por 3 ya que es  >= 10 ",num)
+else:
+    print("Su numero no cumplio la condicion por lo cual se imprime su carta parte ",num/4)
+
+# EJERCICIO. 26
+i = 1
+definitiva = 0
+nota = 0
+while i<6:
+     nota = float(input("Introduzca la nota" + str(i) + ": "))
+     if i==1:
+        definitiva =definitiva+nota*0.15
+     if i==2:
+        definitiva =definitiva+nota*0.20
+     if i==3:
+        definitiva =definitiva+nota*0.15
+     if i==4:
+        definitiva =definitiva+nota*0.30
+     if i==5:
+        definitiva =definitiva+nota*0.20
+     i+=1
+if definitiva < 20:
+    print("Lo siento tu nota es: ",definitiva,"No puedes habilitar.")
+elif definitiva < 30:
+    print(definitiva,"reprobaste :c.")
+elif definitiva >= 30 and definitiva<45:
+    print("aprobaste con: ", definitiva)
+elif nota>45:
+    print("Felicitaciones tu nota es: ",definitiva,"Sigue asi :).")
+
+# EJERCICIO. 27
+num1 = int(input("Ingrese un numero : "))
+num2 = int(input("Ingrese otro numero : "))
+if num1 > num2:
+    print(num1,"Es mayor que ",num2)
+elif num1 == num2:
+    print(num1, "y", num2, "son iguales.")
+else:
+    print(num2,"Es mayor que ",num1)
+
+# EJERCICIO. 28
+num1 = int(input("Ingrese un numero : "))
+decimal = float(num1)
+print("se ha convertido el numero",num1," a decimal: ",decimal)
+
+# EJERCICIO. 29
+digito = 0
+mayor = 0
+menor = 0
+i = 1
+digito = 1
+while i < 4:
+    digito = float(input("digito# " + str(i) + "= "))
+    if digito > mayor:
+        mayor = digito
+    if digito < menor or i == 1:
+        menor = digito
+    i+= 1
+print("el valor mayor es el" + str(mayor))
+print("el valor menor es el" + str(menor))
+
+# EJERCICO. 30
+num1 = int(input("Ingrese numero 1: "))
+num2 = int(input("Ingrese numero 2: "))
+num3 = int(input('Ingrese numero 3: '))
+suma = num1 + num2
+if suma>num3:
+    print("la suma del primer y segundo numero es mayor que el tercer numero.")
+if num3 > suma:
+    print("El tercer numero es mayor que la suma del primer y segundo numero.")
+
+# EJERCICIO. 31
+print("Para saber el valor de su tiquete de avion ingrese...")
+distancia = int(input("La cantidad  de km que recorrera: "))
+estancia = int(input("Los dias de estancia: "))
+precio = distancia*5000
+if estancia >= 7 and distancia >1000:
+    precio = precio - precio*0.15
+    print("El precio del pasaje es ",precio)
+if distancia <= 20:
+    precio = 100000
+    print("El monto minimo a pagar de 20kms o menos es: ",precio)
+else:
+    print("EL precio de su pasaje es: ",precio)
+# EJERCICIO. 32
+anio = int(input("Introduzca un año: "))
+if anio % 4 ==0:
+    print("EL año", anio, " Es bisiesto.")
+if anio % 100 !=0 and anio % 400 ==0:
+    print("EL año", anio, " Es bisiesto.")
+else:
+    if anio % 100 != 1 and anio % 400 == 1:
+        print("El año", anio," no es bisiesto.")
+
+# EJERCICIO. 33
+import math
+a = int(input("Introduzca numero a: "))
+b = int(input(("Introduzca numero b: ")))
+c = int(input(("Introduzca numero c: ")))
+d = b**2 - 4*a*c
+if d >0:
+    rpt1 = (-b + math.sqrt(d)) / (2 * a)
+    rpt2 = (-b - math.sqrt(d)) / (2 * a)
+    print("La respuesta 1 es: ",rpt1)
+    print("La respuesta 2 es: ", rpt2)
+else:
+    print("La ecuacion no tiene valor real.")
+# EJERCICIO. 34
+u1 = str(input("Introduzca su usario: "))
+u2 = str(input("Introduzca su contrasena: "))
+usuario = str("alguien.com")
+contrasena = str("1234")
+if usuario == u1 and contrasena == u2:
+    print("correcto")
+else:
+    print("usuario o contrasena incorrecto")
+
+# EJERCICIO. 35
+dia = ["CERO","UNO","DOS","TRES","CUATRO","CINCO","SEIS ","SIETE","OCHO","NUEVE","DIEZ"]
+num = int(input("Ingrese un numero: "))
+print(dia[num])
+
+# EJERCICIO. 36
+numero = int(input("Introduzca un numero: "))
+contador =len(str(numero))
+print(contador)
+
+# EJERCICIO. 37
+num1 = int(input("Introduzca numero uno: "))
+num2 = int(input(("Introduzca numero dos: ")))
+num3 = int(input(("Introduzca numero tres: ")))
+if num1 < num2 < num3:
+    print("Los numeros se incrementan")
+elif num1 > num2 > num3:
+    print("los numeros se disminuyen")
+else:
+    print("ni incrementan ni se disminuyen")
+
+# EJERCICIO. 38
+num1 = int(input("Introduzca numero uno: "))
+num2 = int(input(("Introduzca numero dos: ")))
+if num1 and num2 >=0 and num1 and num2 <=5:
+    print(num1,num2,"True")
+elif num1 or num2 >5:
+    print(num1,"---",num2,"False")
+
+
+# EJERCICIO. 39
+dia = ["HOLA","Lunes","Martes","Miercoles","Miercoles","Jueves","Sabado","Domingo"]
+num = int(input("Ingrese un numero: "))
+print(dia[num])
+
+#EJERCICIO. 40
+num1 = int(input("Introduzca numero uno: "))
+num2 = int(input(("Introduzca numero dos: ")))
+num3 = int(input(("Introduzca numero tres: ")))
+if num1 == num2 and num2 == num3:
+    print("los tres son iguales.")
+elif num1 == num2 or num1 == num3:
+    print("Dos de ellos son iguales.")
+elif num2 == num3:
+    print("Dos de ellos son iguales.")
+
+else:
+    print("Son distintos los 3.")
+
+# EJERCICIO. 41
+print("Los primeros 10 numeros naturales son: ")
+for i in range (1,11):
+    print(i)
+
+# EJERCICIO. 42
+print("Los primeros 10 numeros naturales pares son: ")
+for i in range (2,21,2):
+    print(i)
+
+# EJERCICIO. 43
+print("Los primeros 10 numeros naturales impares son: ")
+for i in range (1,21,2):
+    print(i)
+
+# EJERCICIO. 44
+n = int(input("Escriba hasta que numero natural quiere el el programa imprima: "))
+n= n+1
+for i in range(1,n):
+    print(i)
+
+# EJERCICIO. 45
+n = int(input("Escriba hasta que numero natural quiere el el programa imprima: "))
+n= n+1
+for i in range(1,n):
+    if i % 2 == 0:
+        i = "-" + str(i)
+    print(i)
+
+# EJERCICIO. 46
+n = int(input("Escriba desde que numero natural quiere que el programa imprima: "))
+m = int(input("Escriba hasta que numero natural quiere que el programa imprima: "))
+m= m+1
+if m>n:
+    for i in range(n,m):
+        print(i)
+
+
+# EJERCICIO. 47
+num = 0
+total = 0
+n = int(input("Escriba desde que numero natural quiere que el programa imprima: "))
+m = int(input("Escriba hasta que numero natural quiere que el programa imprima: "))
+m= m+1
+if m>n:
+    for i in range(n,m):
+        total = total+i
+    print("El total de la suma de los numeros en el rango elegido es :", total)
+
+
+# EJERCICIO. 48
+numero = 0
+suma = 0
+i = 1
+digito = 1
+while i < 11:
+    numero = float(input("Ingrese el numero " + str(i) + "= "))
+    suma = suma + numero
+    i+= 1
+print("La suma de todos los numeros es = ", suma)
+promedio = suma/10
+print("El promedio es = ", promedio)
+
+# EJERCICIO. 49
+n = int(input("Ingrese cuantos numeros quiere ingresar: "))
+numero = 0
+suma = 0
+i = 1
+digito = 1
+while i < n+1:
+    numero = float(input("Ingrese el numero " + str(i) + "= "))
+    suma = suma + numero
+    i+= 1
+print("La suma de todos los numeros es = ", suma)
+promedio = suma/n
+print("El promedio es = ", promedio)
+
+# EJERCICIO. 50
+n = int(input("Ingrese cuantos numeros quiere ingresar: "))
+numero = 0
+sumapares = 0
+sumaimpares = 0
+totalnumerospares = 0
+totalnumerosimpares = 0
+i = 1
+while i < n+1:
+    numero = float(input("Ingrese el numero " + str(i) + "= "))
+    if numero % 2 ==0:
+        sumapares = sumapares + numero
+        totalnumerospares = totalnumerospares+1
+    if numero %2 ==1:
+        sumaimpares = sumaimpares + numero
+        totalnumerosimpares = totalnumerosimpares+1
+    i+= 1
+print("La suma de los numeros pares es : ",sumapares)
+print("El promedio de la suma de numeros pares es : ",sumapares/totalnumerospares)
+print("La suma de los numeros impares es : ",sumaimpares)
+print("EL promedio de la suma de los numeros impares es : ",sumaimpares/totalnumerosimpares)
